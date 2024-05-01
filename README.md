@@ -1,1 +1,1 @@
-A SmartContract For Loan / Payment written in Solana Blockchain
+A SmartContract For Loan / Payment written on Solana Blockchain
