@@ -26,7 +26,7 @@ pub struct LoanReviewPayload {
 //     pub amount: u128,
 // }
 
-// implementation of Movie Instruction fuction
+// implementation of Instruction helpers
 impl LoanInstruction {
     // Unpack inbound buffer to associated Instruction
     // The expected format for input is a Borsh serialized vector
