@@ -35,10 +35,8 @@ impl LoanInstruction {
         let (&variant, rest) = input
             .split_first()
             .ok_or(ProgramError::InvalidInstructionData)?;
-        // `try_from_slice` is one of the implementations from the BorshDeserialization trait
         // Deserializes instruction byte data into the payload struct
         let payload = LoanReviewPayload::try_from_slice(rest).unwrap();
-        // Match the first byte and return the AddMovieReview struct
         Ok(match variant {
             0 => Self::ApplyLoan {
                 name: payload.name,
